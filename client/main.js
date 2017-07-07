@@ -16,6 +16,12 @@ FlowRouter.route('/register', {
     }
 });
 
+FlowRouter.route('/chat', {
+    action: function(params, queryParams) {
+        BlazeLayout.render('mainLayout', { main: "chat" });
+    }
+});
+
 FlowRouter.route('/salas', {
     action: function(params, queryParams) {
         BlazeLayout.render('mainLayout', { main: "roomList" });
