@@ -15,7 +15,7 @@ Template.userRegister.events({
             username: nome,
             password: password
         });
-        FlowRouter.go('/salas');
+        FlowRouter.go('/chat');
     },
 
     'click .voltar': function(){

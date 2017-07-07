@@ -12,6 +12,7 @@ Meteor.methods({
       createdAt: new Date(),
       username: Meteor.user().username
     });
+    FlowRouter.go('/chat');
   }
   
 });
