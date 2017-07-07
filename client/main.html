@@ -18,8 +18,12 @@
 <template name="mainLayout">
   <div class="container">
     {{> header}}
-   
-    {{> Template.dynamic template=main}}
+    
+    {{# if currentUser }}
+        {{> chat }}
+    {{ else }}
+        {{> Template.dynamic template=main }}
+    {{/ if }}
 
     {{> footer}}
   </div>

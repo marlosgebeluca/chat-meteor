@@ -11,7 +11,6 @@ Template.login.events({
         var password = event.target.loginPassword.value;
 
         Meteor.loginWithPassword(email, password);
-        FlowRouter.go('/salas');
     },
 
     'click .register': function(){

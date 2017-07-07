@@ -1,4 +1,5 @@
 Messages = new Mongo.Collection("msgs");
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 Meteor.methods({
   sendMessage: function (messageText) {

@@ -15,7 +15,7 @@ Template.userRegister.events({
             username: nome,
             password: password
         });
-        FlowRouter.go('/chat');
+        FlowRouter.go('/');
     },
 
     'click .voltar': function(){
