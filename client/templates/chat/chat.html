@@ -1,0 +1,15 @@
+<template name="chat">
+    <ul class="message-window">
+      {{#each mensagemRecente}}
+        {{> message}}
+      {{/each}}
+    </ul>
+      
+    {{#momentum plugin="fade"}}
+      {{#if mensagemNaoLida}}
+        <button class="more-messages">Novas Mensagens &#x25BE;</button>
+      {{/if}}
+    {{/momentum}}
+
+    {{> messageSend}}
+</template>

@@ -1,0 +1,13 @@
+<template name="roomList">
+    <div class="cria">
+      <form class="new-room">
+        <input type="text" name="text" placeholder="Crie uma sala" autocomplete="off" />
+      </form>
+    </div>
+
+    <ul class="room-list">
+      {{#each mensagemRecente}}
+        {{> message}}
+      {{/each}}
+    </ul>
+</template>
